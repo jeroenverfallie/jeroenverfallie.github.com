@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('font/coolvetica_rg-webfont.eot');
+  src: url('font/coolvetica_rg-webfont.woff') format('woff'),
+       url('font/coolvetica_rg-webfont.ttf') format('truetype'),
+       url('font/coolvetica_rg-webfont.svg#webfont') format('svg');
+}
+
+* { padding: 0; margin: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #151515;
+  background-image: url('img/pat.png');
+  font-family: 'Coolvetica', Verdana, Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  text-align: center;
+  
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-pack: center;
+  -moz-box-align: center;  
+  
+  display: -o-box;
+  -o-box-orient: horizontal;
+  -o-box-pack: center;
+  -o-box-align: center;  
+  
+  display: box;
+  box-orient: horizontal;
+  box-pack: center;
+  box-align: center;  
+}
+
+.box {
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  -moz-transition: -moz-transform .5s ease-in-out;
+}
+
+  .box > div {
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+.box > div:first-child {
+  position: relative;
+  opacity: 1;
+}
+
+  .box:hover > div:first-child {
+    opacity: 0;
+  }
+
+
+.box > div:last-child {
+  opacity: 0;
+}
+
+  .box:hover > div:last-child {
+    opacity: 1;
+  }
+   .box:active {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
+p, a {
+  font-size: 68px;
+  text-transform: uppercase;
+  letter-spacing: 0.23em;
+  color: #c3c3c3;
+}
+
+  p.sub {
+    font-size: 36px;
+  }
+
+
+p.sub, #recent a, #current span {
+  color: #959595;
+}
+
+
+
+#recent {
+  position: fixed;
+  top: 15px;
+  right: 0;
+  padding: 0 20px 0 0;
+}
+
+    #recent p {
+      font-size: 12px;
+    }
+
+    #recent a {
+      display: block;
+      padding: 7px 0 0;
+      text-decoration: none;
+      font-size: 9px;
+    }
+
+      #recent a:hover {
+        text-decoration: underline;
+      }
+
+      #recent a:before {
+        content: '·  ';
+      }
+      
+#current {
+  position: fixed;
+  top: 15px;
+  left: 0;
+  padding: 0 0 0 20px;
+}
+
+  #current p, span {
+    display: inline;
+    font-size: 12px;
+    letter-spacing: 0.23em;
+  }
+
+
+
+.ie {
+  display: none;
+}

@@ -1,0 +1,27 @@
+body {
+  background: #fff;
+}
+
+.ie {
+  display: block;
+  margin-top: 30px;
+  color: #333;
+}
+
+.ie div {
+  margin: 50px auto;
+  background-image: url('img/no-ie.png');
+  height: 151px;
+  width: 500px;
+}
+
+#current, #recent, .box {
+  display: none;
+}
+
+
+.ie h1 span {
+   color: #f56435;
+   text-decoration: underline;
+}
+
