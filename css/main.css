@@ -132,7 +132,7 @@ p.sub, #recent a, #current span {
   padding: 0 0 0 20px;
 }
 
-  #current p, span {
+  #current p, #current span {
     display: inline;
     font-size: 12px;
     letter-spacing: 0.23em;
