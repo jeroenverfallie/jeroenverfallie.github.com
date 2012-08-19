@@ -93,37 +93,32 @@ p, a {
   }
 
 
-p.sub, #recent a, #current span {
+p.sub, #gitpage a, #current span {
   color: #959595;
 }
 
 
 
-#recent {
+#gitpage {
   position: fixed;
   top: 15px;
   right: 0;
   padding: 0 20px 0 0;
 }
 
-    #recent p {
+    #gitpage p {
       font-size: 12px;
     }
 
-    #recent a {
-      display: block;
-      padding: 7px 0 0;
+    #gitpage a {
       text-decoration: none;
-      font-size: 9px;
+      font-size: 12px;
     }
 
-      #recent a:hover {
+      #gitpage a:hover {
         text-decoration: underline;
       }
 
-      #recent a:before {
-        content: '·  ';
-      }
       
 #current {
   position: fixed;
