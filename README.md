@@ -1,3 +1,1 @@
-# Jeroenverfallie.com #
-
-Just a simple site.
+This repo mainly serves for the CNAME as it's sole purpose.
